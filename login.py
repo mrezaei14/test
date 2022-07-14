@@ -17,8 +17,8 @@ def open_sign_up():
     os.system('py sign_up.py')
 
 def sign_in():
-    # if not os.path.exists('members.txt'):
-    #     file = open('members.txt' , 'w')
+    if not os.path.exists('members.txt'):
+        file = open('members.txt' , 'w')
         close()
     x = txt.get()
     file = open('members.txt')
